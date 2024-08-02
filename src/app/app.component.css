@@ -1,0 +1,143 @@
+/*.movie img
+{
+    height: 100px;
+    width: 100px;
+}
+.movies{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.movie
+{
+    box-shadow: 8px 8px 5px black;
+}
+.dark
+{
+    background-color: black;
+    color: white;
+}*/
+
+
+/* General styles for the main container */
+.main {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Light mode styles */
+  .main.light {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Dark mode styles */
+  .main.dark {
+    background-color: #333;
+    color: #f9f9f9;
+  }
+  
+  /* Button styles */
+  button {
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  .main.light button {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .main.dark button {
+    background-color: #444;
+    color: #f9f9f9;
+  }
+  
+  /* Header styles */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Input field styles */
+  input[type="text"] {
+    padding: 10px;
+    width: calc(20% - 22px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #007BFF;
+  }
+  
+  .main.dark input[type="text"] {
+    background-color: #555;
+    color: #f9f9f9;
+    border-color: #666;
+  }
+  
+  /* Movie container styles */
+  .movies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .movie {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    width: calc(100% - 40px);
+    max-width: 200px;
+  }
+  
+  .movie:hover {
+    transform: scale(1.05);
+  }
+  
+  .movie img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .movie h2 {
+    font-size: 1.2rem;
+    margin: 10px;
+  }
+  
+  .movie p {
+    font-size: 1rem;
+    margin: 10px;
+  }
+  
+  /* Dark mode for movies */
+  .main.dark .movie {
+    background-color: #444;
+  }
+  
+  .main.dark .movie h2,
+  .main.dark .movie p {
+    color: #f9f9f9;
+  }
